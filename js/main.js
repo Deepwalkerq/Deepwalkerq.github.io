@@ -3,8 +3,15 @@ console.log("Nekogatari")
 let mainTab = document.querySelector(".main")
 let memberTab = document.querySelector(".members")
 
+
+if (document.cookie == ""){
+    document.cookie = "active=main"
+}
+
+// function checkTab(e, cookie){
+// }
+
 function openTab(e, tabName){
-    console.log("yes")
 
     if (tabName == "main"){
         mainTab.style.display = "flex"
