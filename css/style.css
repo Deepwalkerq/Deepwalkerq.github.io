@@ -1,1 +1,262 @@
-*,*:after,*:before{box-sizing:border-box}h1,h2,h3,h4,h5,h6{margin:0;padding:0;color:white;font-size:64px}body{margin:0;padding:0;width:100%;height:100vh;background-color:black}.header,.footer{width:100%;height:12%;display:flex;justify-content:center;align-items:center}.content h2{font-size:36px;padding:8px}.footer h3{font-size:36px}.container{width:60%;height:76%;background-color:red;margin:0 auto}
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-size: 64px;
+}
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+}
+@font-face {
+  font-family: "Minecraft-Regular";
+  src: url("fonts/Minecraft-Regular.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Minecraft-Italic";
+  src: url("fonts/Minecraft-Italic.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Minecraft-Bold";
+  src: url("fonts/Minecraft-Bold.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Minecraft-BoldItalic";
+  src: url("fonts/Minecraft-BoldItalic.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+.outline {
+  text-shadow: -1px -1px 0 red, 1px -1px 0 red, -1px 1px 0 red, 1px 1px 0 red;
+}
+.header,
+.footer {
+  width: 100%;
+  height: 12%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header h1,
+.footer h1 {
+  font-family: "Minecraft-Regular";
+  font-size: 64px;
+}
+.header h1:hover,
+.footer h1:hover {
+  text-shadow: -1px -1px 0 red, 1px -1px 0 red, -1px 1px 0 red, 1px 1px 0 red;
+}
+.header h3,
+.footer h3 {
+  font-family: "Minecraft-BoldItalic";
+  font-size: 36px;
+}
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 6%;
+}
+.footer a {
+  text-decoration: none;
+}
+.footer a:hover {
+  text-shadow: -1px -1px 0 red, 1px -1px 0 red, -1px 1px 0 red, 1px 1px 0 red;
+}
+.container {
+  width: 60%;
+  height: 82%;
+  background-color: black;
+  margin: 0 auto;
+}
+.container .content {
+  height: 100%;
+  border-bottom: 1px solid red;
+}
+.container .content a {
+  font-size: 24px;
+  font-family: "Minecraft-Regular";
+  color: red;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
+.container .content a:hover {
+  color: white;
+  transition: linear 0.2s;
+}
+.container .content .navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  height: 10%;
+  width: 100%;
+  border-bottom: 1px solid red;
+}
+.container .content .navbar .navbar-item {
+  width: 16%;
+  height: 15px;
+  text-align: center;
+}
+.container .content .navbar .navbar-item:nth-child(2) {
+  margin: 0 10px;
+}
+.container .content .main {
+  height: 90%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container .content .main p {
+  font-size: 24px;
+  font-family: "Minecraft-Regular";
+  word-wrap: break-word;
+  padding: 5px;
+  color: white;
+}
+.container .content .main .avatar {
+  width: 184px;
+  height: 184px;
+  max-height: 40%;
+  border: 2px solid red;
+  border-radius: 50%;
+  margin: 20px 0;
+}
+.container .content .main .infobox {
+  width: 30%;
+  height: 50%;
+}
+.container .content .members {
+  min-height: 90%;
+  width: 100%;
+  overflow: hidden;
+  display: none;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.container .content .members .avatar {
+  width: 128px;
+  height: 128px;
+  border: 2px solid red;
+  border-radius: 50%;
+  margin: 5px auto;
+}
+.container .content .members .infobox {
+  width: 30%;
+  height: 320px;
+  margin: 10px;
+}
+.container .content .members .infobox p {
+  font-size: 12px;
+}
+.main .infobox .infobox-ul {
+  color: white;
+  height: 100%;
+  width: 100%;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 0;
+  padding-inline-end: 0;
+}
+.main .infobox .infobox-ul .infobox-li {
+  text-align: center;
+  list-style-type: none;
+}
+.main .infobox .infobox-ul .infobox-li a {
+  color: white;
+  margin: 10px auto;
+}
+.main .infobox .infobox-ul .infobox-li a:hover {
+  color: red;
+}
+.members .infobox .infobox-ul {
+  color: white;
+  height: 100%;
+  width: 100%;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  padding-inline-start: 0;
+  padding-inline-end: 0;
+}
+.members .infobox .infobox-ul .infobox-li {
+  text-align: center;
+  list-style-type: none;
+}
+.members .infobox .infobox-ul .infobox-li a {
+  color: white;
+  margin: 1px auto;
+}
+.members .infobox .infobox-ul .infobox-li a:hover {
+  color: red;
+}
+#default {
+  cursor: default;
+}
+.deep {
+  background-image: url("../img/deep.jpg");
+}
+.cony {
+  background-image: url("../img/cony.jpg");
+}
+.fassu {
+  background-image: url("../img/fassu.jpg");
+}
+.pls {
+  background-image: url("../img/pls.jpg");
+}
+.fermi {
+  background-image: url("../img/fermi.jpg");
+}
+.valke {
+  background-image: url("../img/valke.jpg");
+}
+.mochi {
+  background-image: url("../img/mochi.jpg");
+}
+.group {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  bottom: 50%;
+  font-family: "Minecraft-Italic";
+  font-size: 24px;
+  transform: rotate(90deg);
+  transform-origin: right top 0;
+}
+.group a {
+  color: white;
+  text-decoration: none;
+}
+.group a:hover {
+  color: red;
+  transition: linear 0.2s;
+}
