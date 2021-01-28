@@ -221,6 +221,9 @@ body {
 #default {
   cursor: default;
 }
+.default {
+  cursor: default;
+}
 .deep {
   background-image: url("../img/deep.jpg");
 }
@@ -247,7 +250,7 @@ body {
   top: 50%;
   right: 10px;
   bottom: 50%;
-  font-family: "Minecraft-Italic";
+  font-family: "Minecraft-BoldItalic";
   font-size: 24px;
   transform: rotate(90deg);
   transform-origin: right top 0;
