@@ -131,7 +131,7 @@ body {
 .container .content .main {
   height: 90%;
   width: 100%;
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
 }
