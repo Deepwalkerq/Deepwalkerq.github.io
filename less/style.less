@@ -21,6 +21,21 @@ body {
     background-color: black;
 }
 
+// Scrollbar
+
+.members::-webkit-scrollbar {
+    width: 8px;               /* width of the entire scrollbar */
+  }
+  
+  .members::-webkit-scrollbar-track {
+    background: white;        /* color of the tracking area */
+  }
+  
+  .members::-webkit-scrollbar-thumb {
+    background-color: black;    /* color of the scroll thumb */
+    border: 1px solid red;  /* creates padding around scroll thumb */
+  }
+
 // Font
 
 @font-face {
@@ -64,7 +79,7 @@ body {
 
 .header, .footer {
     width: 100%;
-    height: 12%;
+    height: 10%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -102,7 +117,6 @@ body {
     bottom: 0;
     left: 0;
     right: 0;
-    height: 6%;
 
     a {
         text-decoration: none;
@@ -122,7 +136,7 @@ body {
 
 .container {
     width: 60%;
-    height: 82%;
+    height: 80%;
     background-color: black;
     margin: 0 auto;
 
@@ -203,9 +217,9 @@ body {
 
         // Members Tab
         .members {
-            min-height: 90%;
+            height: 90%;
             width: 100%;
-            overflow: hidden;
+            overflow-y: auto;
             
             display: none; // display: flex
             flex-direction: row;
@@ -213,8 +227,6 @@ body {
             flex-wrap: wrap;
             // background-color: green;
             
-
-
             .avatar {
                 width: 128px;
                 height: 128px;
@@ -227,12 +239,20 @@ body {
 
             .infobox {
                 width: 30%;
-                height: 320px;
+                height: 330px;
                 // background: purple;
-                margin: 10px;
+                margin: 0 0.5%;
 
                 p{
                     font-size: 12px;
+                }
+
+                &:nth-child(3n){
+                    margin-right: 0;
+                }
+
+                &:nth-child(3n+1){
+                    margin-left: 0;
                 }
 
             }
@@ -241,12 +261,18 @@ body {
 
 }
 
+// .infobox-end {
+//     width: 100%;
+//     height: 10%;
+//     background: purple;
+// }
+
 // Unordered List
 
 .infobox {
     .infobox-ul {
         color: white;
-        height: 100%;
+        height: auto;
         width: 100%;
         margin-block-start: 0;
         margin-block-end: 0;
@@ -351,3 +377,4 @@ body {
         }
     }
 }
+
