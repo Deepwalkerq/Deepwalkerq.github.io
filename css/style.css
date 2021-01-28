@@ -221,9 +221,6 @@ body {
 #default {
   cursor: default;
 }
-.default {
-  cursor: default;
-}
 .deep {
   background-image: url("../img/deep.jpg");
 }
