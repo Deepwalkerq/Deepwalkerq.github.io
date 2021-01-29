@@ -168,14 +168,12 @@ body {
             
 
             .navbar-item {
-                width: 16%;
                 height: 15px;
                 text-align: center;
-
-                &:nth-child(2){
-                    margin: 0 10px;
-                }
                 
+                &:nth-child(2){
+                    margin: 0 100px;
+                }
             }
 
         }
@@ -207,8 +205,8 @@ body {
             }
 
             .infobox {
-                width: 30%;
-                height: 50%;
+                width: auto;
+                height: auto;
             }
 
             
@@ -226,6 +224,7 @@ body {
             justify-content: center;
             flex-wrap: wrap;
             // background-color: green;
+
             
             .avatar {
                 width: 128px;
@@ -253,6 +252,33 @@ body {
 
                 &:nth-child(3n+1){
                     margin-left: 0;
+                }
+
+                &:nth-child(1) {
+                    margin-top: 10px;
+                }
+
+                &:nth-child(2) {
+                    margin-top: 10px;
+                }
+
+                &:nth-child(3) {
+                    margin-top: 10px;
+                }
+
+                @media screen and (max-width: 1293px) {
+                    width: 48%;
+                    
+                }
+
+                @media screen and (max-width: 847px) {
+                    width: 100%;
+                    margin: 0;
+
+                    &:nth-child(1){
+                        margin-top: 20px;
+                    }
+                    
                 }
 
             }

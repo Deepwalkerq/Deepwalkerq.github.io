@@ -134,12 +134,11 @@ body {
   border-bottom: 1px solid red;
 }
 .container .content .navbar .navbar-item {
-  width: 16%;
   height: 15px;
   text-align: center;
 }
 .container .content .navbar .navbar-item:nth-child(2) {
-  margin: 0 10px;
+  margin: 0 100px;
 }
 .container .content .main {
   height: 90%;
@@ -164,8 +163,8 @@ body {
   margin: 20px 0;
 }
 .container .content .main .infobox {
-  width: 30%;
-  height: 50%;
+  width: auto;
+  height: auto;
 }
 .container .content .members {
   height: 90%;
@@ -196,6 +195,29 @@ body {
 }
 .container .content .members .infobox:nth-child(3n+1) {
   margin-left: 0;
+}
+.container .content .members .infobox:nth-child(1) {
+  margin-top: 10px;
+}
+.container .content .members .infobox:nth-child(2) {
+  margin-top: 10px;
+}
+.container .content .members .infobox:nth-child(3) {
+  margin-top: 10px;
+}
+@media screen and (max-width: 1293px) {
+  .container .content .members .infobox {
+    width: 48%;
+  }
+}
+@media screen and (max-width: 847px) {
+  .container .content .members .infobox {
+    width: 100%;
+    margin: 0;
+  }
+  .container .content .members .infobox:nth-child(1) {
+    margin-top: 20px;
+  }
 }
 .infobox .infobox-ul {
   color: white;
