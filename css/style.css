@@ -27,7 +27,7 @@ body {
   /* width of the entire scrollbar */
 }
 .members::-webkit-scrollbar-track {
-  background: white;
+  background: rgba(0, 0, 0, 0);
   /* color of the tracking area */
 }
 .members::-webkit-scrollbar-thumb {
